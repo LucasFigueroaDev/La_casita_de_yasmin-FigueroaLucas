@@ -1,0 +1,52 @@
+.alojamiento-cartas {
+    background: url(../assets/alojamientohtml.jpg) top / cover;
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
+.bg-alojamiento {
+    background: var(--bg-negro);
+    height: 100%;
+    margin: 0;
+}
+
+.parrafo {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-blanco);
+}
+
+li {
+    font-size: 2rem;
+    color: var(--color-blanco);
+    margin: 1rem;
+
+}
+
+.carta-uno {
+    margin-top: 3rem;
+}
+
+.carta-dos {
+    margin-top: 3rem;
+    width: 50rem;
+}
+
+.carta-tres {
+    margin-top: 3rem;
+    width: 50rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.respuesta {
+    display: block;
+    font-size: 1.5rem;
+}
