@@ -5,7 +5,7 @@
     --color-negro: #000;
     --color-gris: #cdcdcd;
     --bg-negro: rgba(0, 0, 0, .5);
-    --bg-alojamiento: rgba(167, 253, 227, 0.5);
+    --bg-alojamiento: rgba(206, 209, 208, 0.5);
     --bg-alojamiento_txt: rgba(49, 52, 241, 0.7);
 }
 
@@ -48,7 +48,7 @@ hr {
 }
 
 .main-contenedor {
-    background: url(../assets/bg.jpg) 100% / cover fixed;
+    background: url(../assets/bg-main.jpg) 100% / cover fixed;
 }
 
 /*Header*/
@@ -57,7 +57,9 @@ hr {
     height: 100vh;
 }
 
-.encabezado-bg {
+.encabezado-bg,
+.bg-galeria,
+#contacto {
     background: var(--bg-negro);
     height: 100%;
 }
@@ -114,8 +116,9 @@ hr {
 /*Fin de header*/
 
 /*Alojamiento*/
-.alojamiento {
-    background: var(--bg-alojamiento);
+.alojamiento,
+.ubicacion-contenido,
+.bg-galeria {
     padding-bottom: 5rem;
 }
 
@@ -189,12 +192,9 @@ hr {
 /*Fin del alojamiento*/
 
 /*Galeria*/
-.bg-galeria {
-    background: rgba(0, 0, 0, .3);
-    padding-bottom: 5rem;
-}
 
-.bg-galeria h2 {
+.bg-galeria h2,
+#contacto h2 {
     color: var(--color-blanco);
     text-shadow: 2px 2px var(--bg-negro);
 }
@@ -217,29 +217,24 @@ hr {
 /*fin de la galeria*/
 
 /*Ubicacion*/
-.ubicacion-contenido {
-    background: var(--bg-alojamiento);
-    padding-bottom: 5rem;
-}
-
-.ubicacion-map {
-    max-width: 80rem;
-}
-
-.ubicacion-tex p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 550;
-    color: var(--color-negro);
-}
-
 .ubicacion {
     border: 2px solid var(--color-negro);
     border-radius: 2rem;
     padding: 2rem;
 }
 
-.ubicacion-tex p span {
+.ubicacion-map {
+    max-width: 80rem;
+}
+
+.ubicacion-txt {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-blanco);
+}
+
+.ubicacion-txt span {
     display: block;
     font-size: 3rem;
 }
@@ -247,13 +242,7 @@ hr {
 
 /*Contacto*/
 #contacto {
-    background: var(--bg-negro);
     padding-bottom: 5rem;
-}
-
-#contacto h2 {
-    color: var(--color-blanco);
-    text-shadow: 2px 2px var(--color-negro);
 }
 
 #contacto hr {
@@ -325,7 +314,9 @@ footer {
     height: 12rem;
 }
 
-.redes img {
+.facebook,
+.whatsapp,
+.instagram {
     height: 4rem;
     border-radius: 100%;
     margin: 1rem;
@@ -343,6 +334,81 @@ footer {
     font-size: 2rem;
 }
 /*fin del footer*/
+
+/*Alojamiento.html*/
+.alojamiento-tarjetas {
+    background: url(../assets/bg-alojamiento.jpg) center / cover fixed;
+    max-width: 180rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+
+.bg-alojamiento {
+    background: var(--bg-negro);
+    height: 100%;
+    margin: 0;
+    border-radius: 2rem;
+}
+
+.parrafo-uno,
+.parrafo-dos {
+    margin: 3rem 0;
+    color: var(--color-blanco);
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.parrafo-uno {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.parrafo-dos {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.tarjetas-contenido {
+    margin: 0 auto;
+}
+
+.tarjeta-preguntas,
+.tarjeta-servicios {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 80rem;
+    border: 2px solid var(--color-negro);
+    border-radius: 2rem;
+}
+
+.tarjeta-subtitulo {
+    border-bottom: 2px solid var(--color-negro);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.pregunta,
+.servicio {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-blanco);
+    margin-bottom: 1.5rem;
+}
+
+.respuesta {
+    display: block;
+    font-size: 1.5rem;
+}
+/*Fin de lojamiento.html*/
 
 @media(max-width: 390px){
     h2 {
