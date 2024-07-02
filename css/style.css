@@ -46,7 +46,7 @@ hr {
 }
 
 .main-contenedor {
-    background: url(../assets/bg-main.jpg) 100% / cover fixed;
+    background: url(../assets/bg-main.jpg) bottom / cover fixed;
 }
 
 /*Header*/
@@ -446,9 +446,6 @@ h3 {
 @media(max-width: 480px) {
     .encabezado{
         background-attachment: scroll;
-    }
-    .main-contenedor{
-        background-size: cover;
     }
     h2 {
         letter-spacing: 5px;
