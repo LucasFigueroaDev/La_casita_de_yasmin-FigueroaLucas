@@ -5,7 +5,6 @@
     --color-negro: #000;
     --color-gris: #cdcdcd;
     --bg-negro: rgba(0, 0, 0, .5);
-    --bg-alojamiento: rgba(206, 209, 208, 0.5);
     --bg-alojamiento_txt: rgba(49, 52, 241, 0.7);
 }
 
@@ -113,6 +112,7 @@ hr {
         transform: translateX(16x);
     }
 }
+
 /*Fin de header*/
 
 /*Alojamiento*/
@@ -189,6 +189,7 @@ hr {
     text-decoration: none;
     color: var(--color-blanco);
 }
+
 /*Fin del alojamiento*/
 
 /*Galeria*/
@@ -199,7 +200,8 @@ hr {
     text-shadow: 2px 2px var(--bg-negro);
 }
 
-.bg-galeria hr {
+.bg-galeria hr,
+#contacto hr {
     border: 2px solid var(--color-blanco);
 }
 
@@ -214,6 +216,7 @@ hr {
 .galeria-imagen {
     max-height: 50rem;
 }
+
 /*fin de la galeria*/
 
 /*Ubicacion*/
@@ -238,15 +241,12 @@ hr {
     display: block;
     font-size: 3rem;
 }
+
 /*fin de ubicacion*/
 
 /*Contacto*/
 #contacto {
     padding-bottom: 5rem;
-}
-
-#contacto hr {
-    border: 2px solid var(--color-blanco);
 }
 
 .formulario {
@@ -333,6 +333,7 @@ footer {
 .enlaces li a {
     font-size: 2rem;
 }
+
 /*fin del footer*/
 
 /*Alojamiento.html*/
@@ -356,16 +357,17 @@ footer {
     color: var(--color-blanco);
     text-align: center;
     letter-spacing: 5px;
+    text-shadow: 2px 2px var(--color-negro);
+    font-weight: 600;
 }
 
 .parrafo-uno {
     font-size: 2.5rem;
-    font-weight: 600;
 }
 
 .parrafo-dos {
     font-size: 4rem;
-    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .tarjetas-contenido {
@@ -408,26 +410,47 @@ h3 {
     display: block;
     font-size: 1.5rem;
 }
+
 /*Fin de lojamiento.html*/
 
-@media(max-width: 390px){
-    h2 {
-        letter-spacing: 5px;
-    }
-    .alojamiento-txt p {
-        font-size: 1.5rem;
-    }
+/*galeria.html*/
+.galeria-contenido {
+    padding-bottom: 5rem;
 }
 
-@media(max-width:768px){
+.galeria-fotos {
+    background-color: rgba(0, 0, 0, .8);
+    max-width: 180rem;
+    margin: 0 auto;
+    padding: 5rem;
+    border-radius: 10rem;
+}
+
+.foto {
+    background-color: #7a7878;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+/*fin de galeria.html*/
+
+/*media queries*/
+@media(max-width:768px) {
     .titulo-principal {
         font-size: 5rem;
     }
+
     .encabezado-txt {
         font-size: 1.5rem;
     }
 }
 
+@media(max-width: 390px) {
+    h2 {
+        letter-spacing: 5px;
+    }
 
-
-
+    .alojamiento-txt p {
+        font-size: 1.5rem;
+    }
+}
