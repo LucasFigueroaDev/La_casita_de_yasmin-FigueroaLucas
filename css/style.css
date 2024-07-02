@@ -5,7 +5,6 @@
     --color-negro: #000;
     --color-gris: #cdcdcd;
     --bg-negro: rgba(0, 0, 0, .5);
-    --bg-alojamiento_txt: rgba(49, 52, 241, 0.7);
 }
 
 /* Globales */
@@ -144,28 +143,29 @@ hr {
 
 .alojamiento-txt {
     padding: 1rem;
-    background: var(--bg-alojamiento_txt);
+    border: 1px solid var(--color-negro);
     border-radius: 2rem;
+    background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,0.75) 50%, rgba(188,224,238,0.5) 100%);
 }
 
 .alojamiento-txt p {
-    color: var(--color-blanco);
-    text-shadow: 1px 1px var(--color-negro);
+    color: var(--color-negro);
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     font-style: italic;
     animation: mover-izq-der 3s 1;
 }
 
 .alojamiento-boton {
+    background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,0.75) 50%, rgba(188,224,238,0.5) 100%);
     width: 30rem;
     text-align: center;
     margin-top: 1.5rem;
-    border: 2px solid var(--color-negro);
+    border: 1px solid var(--color-negro);
     border-radius: 3rem;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 var(--bg-alojamiento_txt);
+    box-shadow: inset 0 0 0 0 #5db1f7;
     -webkit-transition: ease-out 1s;
     -moz-transition: ease-out 1s;
     transition: ease-out 1s;
@@ -173,7 +173,7 @@ hr {
 }
 
 .alojamiento-boton:hover {
-    box-shadow: inset 100rem 0 0 0 var(--bg-alojamiento_txt);
+    box-shadow: inset 100rem 0 0 0 #5db1f7;
 }
 
 .boton {
@@ -183,11 +183,10 @@ hr {
 
 .boton a {
     font-size: 2rem;
-    font-weight: 600;
-    text-shadow: 2px 2px var(--color-negro);
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
-    color: var(--color-blanco);
+    color: var(--color-negro);
 }
 
 /*Fin del alojamiento*/
@@ -338,14 +337,13 @@ footer {
 
 /*Alojamiento.html*/
 .alojamiento-tarjetas {
-    background: url(../assets/bg-alojamiento.jpg) center / cover fixed;
+    background: var(--bg-negro);
     max-width: 180rem;
     margin: 0 auto;
     border-radius: 2rem;
 }
 
 .bg-alojamiento {
-    background: var(--bg-negro);
     height: 100%;
     margin: 0;
     border-radius: 2rem;
@@ -376,7 +374,7 @@ footer {
 
 .tarjeta-preguntas,
 .tarjeta-servicios {
-    margin: 0 auto;
+    background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,0.75) 50%, rgba(188,224,238,0.5) 100%);    margin: 0 auto;
     padding: 2rem;
     width: 80rem;
     border: 2px solid var(--color-negro);
@@ -390,19 +388,19 @@ footer {
 
 h3 {
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
     text-decoration: underline;
     letter-spacing: 3px;
-    color: var(--color-blanco);
+    color: var(--color-negro);
     text-align: center;
 }
 
 .pregunta,
 .servicio {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
-    color: var(--color-blanco);
+    color: var(--color-negro);
     margin-bottom: 1.5rem;
 }
 
@@ -445,7 +443,12 @@ h3 {
     }
 }
 
-@media(max-width: 390px) {
+@media(max-width: 480px) {
+    .main-contenedor,
+    .encabezado{
+        background-attachment: fixed;
+        background-position: 25%;
+    }
     h2 {
         letter-spacing: 5px;
     }
