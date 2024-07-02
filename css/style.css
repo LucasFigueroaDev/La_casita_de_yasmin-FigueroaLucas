@@ -444,8 +444,11 @@ h3 {
 }
 
 @media(max-width: 480px) {
-    .encabezado {
+    .encabezado{
         background-attachment: scroll;
+    }
+    .main-contenedor{
+        background-size: cover;
     }
     h2 {
         letter-spacing: 5px;
