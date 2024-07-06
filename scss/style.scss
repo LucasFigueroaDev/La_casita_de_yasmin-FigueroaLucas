@@ -1,0 +1,15 @@
+// Reset
+@import './config/variables';
+@import './config/reset';
+@import './config/globales';
+// Layout
+@import './config/header';
+@import './config/alojamiento';
+@import './config/galeria';
+@import './config/ubicacion';
+@import './config/contacto';
+@import './config/footer';
+@import './config/alojamientohtml';
+@import './config/galeriahtml';
+// Media queries
+@import './config/mq';

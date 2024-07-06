@@ -1,0 +1,22 @@
+/* Ubicacion */
+.ubicacion-contenido {
+    padding-bottom: 5rem;
+    .ubicacion {
+        border: 2px solid var(--color-negro);
+        border-radius: 2rem;
+        padding: 2rem;
+        .ubicacion-map {
+            max-width: 80rem;
+        }
+        .ubicacion-txt {
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--color-blanco);
+            span {
+                display: block;
+                font-size: 3rem;
+            }
+        }
+    }
+}

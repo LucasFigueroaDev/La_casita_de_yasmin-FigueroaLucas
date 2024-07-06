@@ -1,0 +1,31 @@
+/* footer */
+footer {
+    background: var(--color-negro);
+    .footer-logo img {
+        height: 12rem;
+    }
+    .facebook,
+    .whatsapp,
+    .instagram {
+        height: 4rem;
+        border-radius: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .footer-enlace {
+        font-size: 2rem;
+    }
+    .footer-copyright {
+        background: var(--color-negro);
+        color: var(--color-blanco);
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,26 @@
+/* Mq */
+@media(max-width:768px) {
+    .titulo-principal {
+        font-size: 5rem;
+    }
+
+    .encabezado-txt {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .encabezado{
+        background-attachment: scroll;
+    }
+    .main-contenedor {
+        background: url(../assets/bg-main.jpg) 100% / cover no-repeat none;
+    }
+    h2 {
+        letter-spacing: 5px;
+    }
+
+    .alojamiento-txt p {
+        font-size: 1.5rem;
+    }
+}
