@@ -17,11 +17,11 @@
             align-content: center;
             .alojamiento-txt {
                 padding: 1rem;
-                border: 1px solid var(--color-negro);
+                border: 1px solid $color-negro;
                 border-radius: 2rem;
                 background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,0.75) 50%, rgba(188,224,238,0.5) 100%);
                 p {
-                    color: var(--color-negro);
+                    color: $color-negro;
                     font-size: 2.5rem;
                     font-weight: 700;
                     text-transform: uppercase;
@@ -34,7 +34,7 @@
                 width: 30rem;
                 text-align: center;
                 margin-top: 1.5rem;
-                border: 1px solid var(--color-negro);
+                border: 1px solid $color-negro;
                 border-radius: 3rem;
                 cursor: pointer;
                 box-shadow: inset 0 0 0 0 #5db1f7;
@@ -53,7 +53,7 @@
                         font-weight: 700;
                         text-align: center;
                         text-decoration: none;
-                        color: var(--color-negro);
+                        color: $color-negro;
                     }
                 }
             }

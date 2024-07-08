@@ -1,30 +1,30 @@
 /* Header */
 .encabezado {
-    background: url(../assets/header.jpeg) center / cover fixed;
+    background: $bg-header center / cover fixed;
     height: 100vh;
     .encabezado-bg {
-        background: var(--bg-negro);
+        background: $bg-oscuro;
         height: 100%;
         .nav-boton {
-            background: var(--color-blanco);
+            background: $color-blanco;
         }
         
         .encabezado-nav {
             padding-bottom: 1rem;
-            border-bottom: 1px solid var(--color-gris);
+            border-bottom: 1px solid $color-gris;
             
         }
         .logo {
             height: 6rem;
         }
         .enlace {
-            color: var(--color-blanco);
+            color: $color-blanco;
             font-size: 2rem;
             font-weight: 500;
-            text-shadow: 2px 2px var(--color-negro);
+            text-shadow: 2px 2px $color-negro;
             margin-right: 3rem;
             &:hover {
-                color: var(--color-gris);
+                color: $color-gris;
                 font-weight: 600;
                 transition: font-size 1s;
                 font-size: 2.2rem;
@@ -40,7 +40,7 @@
             .encabezado-txt {
                 animation: mover-izq-der 2s 1;
                 font-size: 3rem;
-                color: var(--color-blanco);
+                color: $color-blanco;
             }
             @keyframes mover-izq-der {
                 from {
@@ -51,29 +51,6 @@
                     transform: translateX(16x);
                 }
             }
-        }
-    }
-}
-
-.encabezado-titulo {
-    text-align: center;
-    position: relative;
-    top: 30%;
-    .titulo-principal {
-        animation: mover-izq-der 3s 1;
-    }
-    .encabezado-txt {
-        animation: mover-izq-der 2s 1;
-        font-size: 3rem;
-        color: var(--color-blanco);
-    }
-    @keyframes mover-izq-der {
-        from {
-            transform: translateX(-300px);
-        }
-    
-        to {
-            transform: translateX(16x);
         }
     }
 }

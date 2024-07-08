@@ -1,7 +1,10 @@
-:root {
-    --font-principal: "Montserrat", sans-serif;
-    --color-blanco: #fff;
-    --color-negro: #000;
-    --color-gris: #cdcdcd;
-    --bg-negro: rgba(0, 0, 0, .5);
-}
+// Colores
+$color-negro: #000;
+$color-blanco: #fff;
+$color-gris: #cdcdcd;
+// Tipografia
+$font-principal: "Montserrat", sans-serif;
+// Background
+$bg-oscuro: rgba(0, 0, 0, .5);
+$bg-header: url(../assets/header.jpeg);
+$bg-main: url(../assets/bg-main.jpg);
