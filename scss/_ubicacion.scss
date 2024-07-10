@@ -1,21 +1,21 @@
 /* Ubicacion */
-.ubicacion-contenido {
+.ubicacion {
     padding-bottom: 5rem;
-    .ubicacion {
+    &_contenido {
         border: 2px solid $color-negro;
         border-radius: 2rem;
         padding: 2rem;
-        .ubicacion-map {
+        &_map {
             max-width: 80rem;
         }
-        .ubicacion-txt {
+        &_txt {
+            @include style-text (2rem, 400, italic, start);
             margin-top: 1rem;
-            font-size: 2rem;
-            font-weight: 400;
             color: $color-blanco;
+            text-shadow: 0 0 1rem $color-negro;
             span {
                 display: block;
-                font-size: 3rem;
+                @include style-text (3rem, 500, normal, start);
             }
         }
     }

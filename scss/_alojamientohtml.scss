@@ -1,53 +1,45 @@
 /* Alojamiento.html */
-.alojamiento-tarjetas {
+.alojamiento_tarjetas {
     background: $bg-oscuro;
     max-width: 180rem;
     margin: 0 auto;
     border-radius: 2rem;
-    .bg-alojamiento {
+    &_bg {
         height: 100%;
         margin: 0;
         border-radius: 2rem;
-        .parrafo-uno,
-        .parrafo-dos {
+        &_parrafo{
+            @include style-text (2.5rem, 600, normal, center);
             margin: 3rem 0;
             color: $color-blanco;
-            text-align: center;
             letter-spacing: 5px;
             text-shadow: 2px 2px $color-negro;
-            font-weight: 600;
         }
-        .parrafo-uno {
-            font-size: 2.5rem;
-        }
-        .parrafo-dos {
+        &_parrafo-dos {
             font-size: 4rem;
             text-transform: uppercase;
         }
-        .tarjetas-contenido {
+        &_contenido {
             margin: 0 auto;
-            .tarjeta-preguntas,
-            .tarjeta-servicios {
+            &_tarjeta {
                 background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,0.75) 50%, rgba(188,224,238,0.5) 100%);    margin: 0 auto;
                 padding: 2rem;
                 width: 80rem;
                 border: 2px solid $color-negro;
                 border-radius: 2rem;
-            }
-            .tarjeta-subtitulo {
+                &_subtitulo {
                     border-bottom: 2px solid $color-negro;
                     margin-bottom: 1rem;
-            }
-            .pregunta,
-            .servicio {
-                font-size: 2.5rem;
-                font-weight: 500;
+                }
+                &_txt {
+                    @include style-text (2.5rem, 500, normal, start);
                 color: $color-negro;
                 margin-bottom: 1.5rem;
-            }
-            .respuesta {
-                display: block;
+                }
+                &_respuesta {
+                    display: block;
                 font-size: 1.5rem;
+                }
             }
         }
     }

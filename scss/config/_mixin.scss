@@ -1,0 +1,13 @@
+@mixin style-text ($size, $weigth, $style, $align) {
+    font-size: $size;
+    font-weight: $weigth;
+    font-style: $style;
+    text-align: $align;
+};
+
+@mixin margin ($top, $left, $rigth, $bottom) {
+    margin-top: $top;
+    margin-left: $left;
+    margin-right: $rigth;
+    margin-bottom: $bottom;
+};

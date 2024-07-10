@@ -1,26 +1,21 @@
 /* footer */
-footer {
+.pie-de-pag {
     background: $color-negro;
-    .footer-logo img {
+    &_logo {
         height: 12rem;
     }
-    .facebook,
-    .whatsapp,
-    .instagram {
+    &_red-social{
         height: 4rem;
         border-radius: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 2rem;
+        @include margin (1rem, 2rem, 0rem, 1rem);
     }
-    .footer-enlace {
+    &_link {
         font-size: 2rem;
     }
-    .footer-copyright {
+    &_copyright {
         background: $color-negro;
         color: $color-blanco;
-        font-size: 2rem;
-        text-align: center;
+        @include style-text (2rem, 400, normal, center);
         margin: 0;
         padding-bottom: 1rem;
     }

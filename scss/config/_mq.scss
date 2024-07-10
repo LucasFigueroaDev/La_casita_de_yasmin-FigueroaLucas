@@ -1,10 +1,9 @@
 /* Mq */
 @media(max-width:768px) {
-    .titulo-principal {
+    .encabezado_bg_titulo_principal {
         font-size: 5rem;
     }
-
-    .encabezado-txt {
+    .encabezado_bg_titulo_txt {
         font-size: 1.5rem;
     }
 }
@@ -13,14 +12,17 @@
     .encabezado{
         background-attachment: scroll;
     }
-    .main-contenedor {
-        background: url(../assets/bg-main.jpg) 100% / cover no-repeat none;
+    
+    .main_contenedor {
+        background-position: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: none;
     }
     h2 {
         letter-spacing: 5px;
     }
-
-    .alojamiento-txt p {
+    .alojamiento_contenido_descripcion_txt p {
         font-size: 1.5rem;
     }
 }

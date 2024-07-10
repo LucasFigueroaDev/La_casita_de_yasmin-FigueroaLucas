@@ -1,13 +1,13 @@
 /* galeria.html */
-.galeria-contenido {
+.galeria-fotos {
     padding-bottom: 5rem;
-    .galeria-fotos {
+    &_contenido {
         background-color: rgba(0, 0, 0, .8);
         max-width: 180rem;
         margin: 0 auto;
         padding: 5rem;
         border-radius: 10rem;
-        .foto {
+        &_foto {
             background-color: $color-gris;
             padding: 0.5rem;
             border-radius: 2rem;

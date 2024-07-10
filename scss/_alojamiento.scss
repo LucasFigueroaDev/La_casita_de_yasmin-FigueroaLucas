@@ -1,10 +1,10 @@
 /* Alojamiento */
 .alojamiento {
     padding-bottom: 5rem;
-    .alojamiento-contenido {
+    &_contenido {
         margin: 0 auto;
         padding: 2rem;
-        .alojamiento-img {
+        &_img {
             max-width: 75rem;
             margin-bottom: 1rem;
             animation: mover-izq-der 4s 1;
@@ -13,23 +13,21 @@
                 max-width: 100%;
             }
         }
-        .alojamiento-descripcion {
+        &_descripcion {
             align-content: center;
-            .alojamiento-txt {
+            &_txt {
                 padding: 1rem;
                 border: 1px solid $color-negro;
                 border-radius: 2rem;
                 background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,0.75) 50%, rgba(188,224,238,0.5) 100%);
                 p {
+                    @include style-text(2.5rem, 700, italic, center);
                     color: $color-negro;
-                    font-size: 2.5rem;
-                    font-weight: 700;
                     text-transform: uppercase;
-                    font-style: italic;
                     animation: mover-izq-der 3s 1;
                 }
             }
-            .alojamiento-boton {
+            &_boton {
                 background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,0.75) 50%, rgba(188,224,238,0.5) 100%);
                 width: 30rem;
                 text-align: center;
@@ -37,21 +35,19 @@
                 border: 1px solid $color-negro;
                 border-radius: 3rem;
                 cursor: pointer;
-                box-shadow: inset 0 0 0 0 #5db1f7;
+                box-shadow: inset 0 0 0 0 $color-amarillo;
                 -webkit-transition: ease-out 1s;
                 -moz-transition: ease-out 1s;
                 transition: ease-out 1s;
                 animation: mover-izq-der 2s 1;
                 &:hover {
-                    box-shadow: inset 100rem 0 0 0 #5db1f7;
+                    box-shadow: inset 100rem 0 0 0 $color-amarillo;
                 }
-                .boton {
+                &_btn {
                     background: transparent;
                     border: none;
                     a {
-                        font-size: 2rem;
-                        font-weight: 700;
-                        text-align: center;
+                        @include style-text (2rem, 700, normal, center);
                         text-decoration: none;
                         color: $color-negro;
                     }

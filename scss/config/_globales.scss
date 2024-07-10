@@ -1,28 +1,20 @@
 /* Globales */
 h1 {
-    font-size: 7rem;
-    font-weight: 400;
-    font-style: italic;
+    @include style-text (7rem, 400, italic, center);
     color: $color-blanco;
-    text-shadow: 2px 2px $color-negro;
 }
 
 h2 {
-    font-size: 4rem;
+    @include style-text (4rem, 400, italic, center);
     letter-spacing: 2rem;
-    text-align: center;
-    font-style: italic;
     padding-top: 5rem;
     text-shadow: 0 0 5px $color-blanco;
 }
 
 h3 {
-    font-size: 3rem;
-    font-weight: 500;
-    font-style: italic;
+    @include style-text (3rem, 500, italic, center);
     text-decoration: underline;
-    letter-spacing: 3px;
-    text-align: center;
+    letter-spacing: 1rem;
 }
 
 hr {
@@ -36,6 +28,6 @@ a{
     text-decoration: none;
 }
 
-.main-contenedor {
+.main_contenedor {
     background: $bg-main bottom / cover fixed;
 }

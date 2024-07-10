@@ -1,20 +1,19 @@
 /* Galeria */
-.bg-galeria{
+.galeria{
     background: $bg-oscuro;
     height: 100%;
     padding-bottom: 5rem;
     h2 {
         color: $color-negro;
-        text-shadow: 2px 2px $color-negro;
     }
     hr {
         border: 2px solid $color-blanco;
     }
-    .galeria {
+    &_contenedor {
         max-width: 100rem;
-        .galeria-contenedor {
+        &_carrusel {
             padding: 2rem;
-            .galeria-imagen {
+            &_foto {
                 max-height: 50rem;
             }
         }

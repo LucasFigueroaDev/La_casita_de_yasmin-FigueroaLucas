@@ -21,81 +21,77 @@
 <body>
     <!--Header-->
     <header class="encabezado">
-        <div class="encabezado-bg">
+        <div class="encabezado_bg">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <button class="navbar-toggler nav-boton" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler encabezado_bg_nav-boton" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse mt-3 flex-sm-row justify-content-sm-between encabezado-nav"
                         id="navbarTogglerDemo01">
-                        <img class="logo" src="assets/logo-nuevo.png" alt="logoDeMarca">
+                        <img class="encabezado_bg_nav_logo" src="assets/logo-nuevo.png" alt="logoDeMarca">
                         <ul class="navbar-nav mb-lg-0">
-                            <li class="nav-item"><a class="nav-link enlace" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link enlace" href="html/alojamiento.html">Alojamiento</a>
+                            <li class="nav-item"><a class="nav-link encabezado_bg_nav_enlace" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link encabezado_bg_nav_enlace" href="html/alojamiento.html">Alojamiento</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link enlace" href="html/galeria.html">Galería</a></li>
-                            <li class="nav-item"><a class="nav-link enlace" href="#ubicacion">Ubicación</a></li>
-                            <li class="nav-item"><a class="nav-link enlace" href="#contacto">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link encabezado_bg_nav_enlace" href="html/galeria.html">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link encabezado_bg_nav_enlace" href="#ubicacion">Ubicación</a></li>
+                            <li class="nav-item"><a class="nav-link encabezado_bg_nav_enlace" href="#contacto">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="encabezado-titulo">
-                <h1 class="titulo-principal">La Casita de Yasmín</h1>
-                <p class="encabezado-txt">San Antonio de Arredondo</p>
+            <div class="encabezado_bg_titulo">
+                <h1 class="encabezado_bg_titulo_principal">La Casita de Yasmín</h1>
+                <p class="encabezado_bg_titulo_txt">San Antonio de Arredondo</p>
             </div>
         </div>
     </header>
     <!--Fin de header-->
     <!--Main-->
-    <main class="main-contenedor">
+    <main class="main_contenedor">
         <!--Alojamiento-->
         <section class="container-fluid alojamiento">
             <h2>Alojamiento</h2>
             <hr>
-            <div class="row container-fluid alojamiento-contenido">
-                <div class="col-lg-6 alojamiento-img">
+            <div class="row container-fluid alojamiento_contenido">
+                <div class="col-lg-6 alojamiento_contenido_img">
                     <img src="assets/galeria/12-13.jpg" alt="">
                 </div>
-                <div
-                    class="col-lg-6 d-flex flex-column justify-content-center align-items-center  alojamiento-descripcion">
-                    <div class="text-center alojamiento-txt">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center alojamiento_contenido_descripcion">
+                    <div class="text-center alojamiento_contenido_descripcion_txt">
                         <p>Vení a disfrutar de la tranquilad de San Antonio de Arredondo, a solo diez minutos del
                             centro de Carlos Paz y a cuatro cuadras del río de San Antonio. Viví una experiencia de
                             descanso
                             inolvidable y disfruta tus vacaciones al máximo.</p>
                     </div>
-                    <div class="alojamiento-boton">
-                        <button class="boton" type="button"><a href="html/alojamiento.html">Más información</a></button>
+                    <div class="alojamiento_contenido_descripcion_boton">
+                        <button class="alojamiento_contenido_descripcion_boton_btn" type="button"><a href="html/alojamiento.html">Más información</a></button>
                     </div>
                 </div>
             </div>
         </section>
         <!--Fin de alojamiento-->
         <!--Galeria-->
-        <section class="bg-galeria">
-            <a href="./html/galeria.html">
-                <h2>Galería</h2>
-            </a>
+        <section class="galeria">
+            <a href="./html/galeria.html"><h2>Galería</h2></a>
             <hr>
-            <div class="container-fluid galeria">
+            <div class="container-fluid galeria_contenedor">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner galeria-contenedor">
+                    <div class="carousel-inner galeria_contenedor_carrusel">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="assets/carrusel/1.jpg" class="d-block w-100 galeria-imagen"
-                                alt="fotoDeHabitacionMatrimonial">
+                            <img src="assets/carrusel/1.jpg" class="d-block w-100 galeria_contenedor_carrusel_foto" alt="fotoDeHabitacionMatrimonial">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="assets/carrusel/2.jpg" class="d-block w-100 galeria-imagen" alt="fotoDelComedor">
+                            <img src="assets/carrusel/2.jpg" class="d-block w-100 galeria_contenedor_carrusel_foto" alt="fotoDelComedor">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/carrusel/3.jpg" class="d-block w-100 galeria-imagen" alt="fotoDelAsador">
+                            <img src="assets/carrusel/3.jpg" class="d-block w-100 galeria_contenedor_carrusel_foto" alt="fotoDelAsador">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/carrusel/4.jpg" class="d-block w-100 galeria-imagen" alt="fotoDeLaPileta">
+                            <img src="assets/carrusel/4.jpg" class="d-block w-100 galeria_contenedor_carrusel_foto" alt="fotoDeLaPileta">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -113,11 +109,11 @@
         </section>
         <!--Fin de galeria-->
         <!--Ubicacion-->
-        <section id="ubicacion" class="container-fluid ubicacion-contenido">
+        <section id="ubicacion" class="container-fluid ubicacion">
             <h2>Ubicación</h2>
             <hr>
-            <div class="container d-flex align-items-center flex-wrap text-bg-primary bg-opacity-75 ubicacion">
-                <div class="flex-shrink-0 ratio ratio-4x3 ubicacion-map">
+            <div class="container d-flex align-items-center flex-wrap text-bg-primary bg-opacity-75 ubicacion_contenido">
+                <div class="flex-shrink-0 ratio ratio-4x3 ubicacion_contenido_map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!4v1719165535664!6m8!1m7!1swZ8r04a5g884eqq6hqI0Jw!2m2!1d-31.46287507508571!2d-64.52752904422984!3f16.259947!4f0!5f0.7820865974627469"
                         width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -125,7 +121,7 @@
                     </iframe>
                 </div>
                 <div class="flex-grow-1 ms-3">
-                    <p class="ubicacion-txt"><span>San Antonio De Arredondo</span>Tte. Castillo 309 - Córdoba Argentina
+                    <p class="ubicacion_contenido_txt"><span>San Antonio De Arredondo</span>Tte. Castillo 309 - Córdoba Argentina
                     </p>
                 </div>
             </div>
@@ -135,28 +131,28 @@
         <section id="contacto" class="contacto">
             <h2>Contacto</h2>
             <hr>
-            <form action="" class="formulario">
-                <fieldset>
+            <form action="" class="contacto_formulario">
+                <fieldset class="contacto_formulario_set">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 campo">
+                        <div class="col-lg-6 col-md-6 contacto_formulario_set_campo">
                             <label for="">Nombre</label>
-                            <input type="text" class="input" placeholder="Tu Nombre">
+                            <input type="text" class="contacto_formulario_set_campo_input" placeholder="Tu Nombre">
                         </div>
-                        <div class="col-lg-6 col-md-6 campo">
+                        <div class="col-lg-6 col-md-6 contacto_formulario_set_campo">
                             <label for="">Teléfono</label>
-                            <input type="tel" class="input" placeholder="Tu Teléfono">
+                            <input type="tel" class="contacto_formulario_set_campo_input" placeholder="Tu Teléfono">
                         </div>
-                        <div class="col-lg-12 campo">
+                        <div class="col-lg-12 contacto_formulario_set_campo">
                             <label for="">Correo</label>
-                            <input type="email" class="input" placeholder="Tu Email">
+                            <input type="email" class="contacto_formulario_set_campo_input" placeholder="Tu Email">
                         </div>
-                        <div class="col-lg-12 campo">
+                        <div class="col-lg-12 contacto_formulario_set_campo">
                             <label for="">Mensaje</label>
-                            <textarea class="input" placeholder="Mensaje"></textarea>
+                            <textarea class="contacto_formulario_set_campo_input" placeholder="Mensaje"></textarea>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <input type="submit" value="Enviar" class="formulario-boton">
+                        <input type="submit" value="Enviar" class="contacto_formulario_set_boton">
                     </div>
                 </fieldset>
             </form>
@@ -165,31 +161,30 @@
     </main>
     <!--Fin de main-->
     <!--Footer-->
-    <footer>
+    <footer class="pie-de-pag">
         <div class="d-md-flex justify-content-md-around align-items-md-center text-center pt-3">
-            <div class="footer-logo">
-                <img src="assets/logo-nuevo.png" alt="logo">
+            <div>
+                <img class="pie-de-pag_logo" src="assets/logo-nuevo.png" alt="logo">
             </div>
-            <div class="redes">
-                <a href="https://facebook.com"><img class="facebook" src="assets/facebook.png" alt="logoDeFacebook"></a>
-                <a href="https://whatsapp.com"><img class="whatsapp" src="assets/whatsapp.png" alt="logoDeWhatsapp"></a>
-                <a href="https://instagram.com"><img class="instagram" src="assets/instagram.png"
-                        alt="logoDeInstagram"></a>
+            <div>
+                <a href="https://facebook.com"><img class="pie-de-pag_red-social" src="assets/facebook.png" alt="logoDeFacebook"></a>
+                <a href="https://whatsapp.com"><img class="pie-de-pag_red-social" src="assets/whatsapp.png" alt="logoDeWhatsapp"></a>
+                <a href="https://instagram.com"><img class="pie-de-pag_red-social" src="assets/instagram.png" alt="logoDeInstagram"></a>
             </div>
-            <ul class="enlaces">
-                <li><a class="footer-enlace link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+            <ul>
+                <li><a class="pie-de-pag_link link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                         href="index.html">Inicio</a></li>
-                <li><a class="footer-enlace link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                <li><a class="pie-de-pag_link link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                         href="html/alojamiento.html">Alojamiento</a></li>
-                <li><a class="footer-enlace link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                <li><a class="pie-de-pag_link link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                         href="html/galeria.html">Galería</a></li>
-                <li><a class="footer-enlace link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                <li><a class="pie-de-pag_link link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                         href="#ubicacion">Ubicación</a></li>
-                <li><a class="footer-enlace link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                <li><a class="pie-de-pag_link link-warning link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                         href="#contacto">Contacto</a></li>
             </ul>
         </div>
-        <p class="footer-copyright">2024 © La casita de Yasmín - San Antonio de Arredondo - Córdoba. Desing Lucas
+        <p class="pie-de-pag_copyright">2024 © La casita de Yasmín - San Antonio de Arredondo - Córdoba. Desing Lucas
             Figueroa</p>
     </footer>
     <!--Fin de footer-->
