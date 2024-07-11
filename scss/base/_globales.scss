@@ -5,7 +5,7 @@ h1 {
 }
 
 h2 {
-    @include style-text (4rem, 400, italic, center);
+    @include style-text (4rem, 500, italic, center);
     letter-spacing: 2rem;
     padding-top: 5rem;
     text-shadow: 0 0 5px $color-blanco;

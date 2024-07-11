@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
   text-align: center;
   letter-spacing: 2rem;
@@ -382,6 +382,7 @@ a {
   margin: 0 auto;
   padding: 5rem;
   border-radius: 10rem;
+  overflow: hidden;
 }
 .galeria-fotos_contenido_foto {
   background-color: #cdcdcd;
