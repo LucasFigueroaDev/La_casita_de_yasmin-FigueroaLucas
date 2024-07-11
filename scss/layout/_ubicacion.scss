@@ -5,17 +5,18 @@
         border: 2px solid $color-negro;
         border-radius: 2rem;
         padding: 2rem;
+        background: linear-gradient(135deg, rgba(147,206,222,1) 0%, rgba(117,189,209,0.94) 27%, rgba(73,189,156,0.83) 81%, rgba(73,189,156,0.79) 100%);        
         &_map {
             max-width: 80rem;
+            border: 1px solid $color-negro;
         }
         &_txt {
-            @include style-text (2rem, 400, italic, start);
+            @include style-text (2rem, 450, italic, start);
             margin-top: 1rem;
-            color: $color-blanco;
-            text-shadow: 0 0 1rem $color-negro;
+            color: $color-negro;
             span {
                 display: block;
-                @include style-text (3rem, 500, normal, start);
+                @include style-text (3rem, 550, normal, start);
             }
         }
     }

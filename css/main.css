@@ -136,7 +136,7 @@ a {
   padding: 1rem;
   border: 1px solid #000;
   border-radius: 2rem;
-  background: linear-gradient(to right, rgb(179, 220, 237) 0%, rgba(41, 184, 229, 0.75) 50%, rgba(188, 224, 238, 0.5) 100%);
+  background: linear-gradient(135deg, rgb(147, 206, 222) 0%, rgba(117, 189, 209, 0.94) 27%, rgba(73, 189, 156, 0.83) 81%, rgba(73, 189, 156, 0.79) 100%);
 }
 .alojamiento_contenido_descripcion_txt p {
   font-size: 2.5rem;
@@ -148,21 +148,16 @@ a {
   animation: mover-izq-der 3s 1;
 }
 .alojamiento_contenido_descripcion_boton {
-  background: linear-gradient(to right, rgb(179, 220, 237) 0%, rgba(41, 184, 229, 0.75) 50%, rgba(188, 224, 238, 0.5) 100%);
   width: 30rem;
   text-align: center;
   margin-top: 1.5rem;
   border: 1px solid #000;
   border-radius: 3rem;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #ffd050;
-  -webkit-transition: ease-out 1s;
-  -moz-transition: ease-out 1s;
-  transition: ease-out 1s;
   animation: mover-izq-der 2s 1;
 }
 .alojamiento_contenido_descripcion_boton:hover {
-  box-shadow: inset 100rem 0 0 0 #ffd050;
+  background: #49bd9c;
 }
 .alojamiento_contenido_descripcion_boton_btn {
   background: transparent;
@@ -207,23 +202,24 @@ a {
   border: 2px solid #000;
   border-radius: 2rem;
   padding: 2rem;
+  background: linear-gradient(135deg, rgb(147, 206, 222) 0%, rgba(117, 189, 209, 0.94) 27%, rgba(73, 189, 156, 0.83) 81%, rgba(73, 189, 156, 0.79) 100%);
 }
 .ubicacion_contenido_map {
   max-width: 80rem;
+  border: 1px solid #000;
 }
 .ubicacion_contenido_txt {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 450;
   font-style: italic;
   text-align: start;
   margin-top: 1rem;
-  color: #fff;
-  text-shadow: 0 0 1rem #000;
+  color: #000;
 }
 .ubicacion_contenido_txt span {
   display: block;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 550;
   font-style: normal;
   text-align: start;
 }
