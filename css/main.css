@@ -104,12 +104,12 @@ a {
 }
 
 .main_contenedor {
-  background: url(../assets/bg-main.jpg) bottom/cover fixed;
+  background: url(../assets/bg-main.webp) bottom/cover fixed;
 }
 
 /* Header */
 .encabezado {
-  background: url(../assets/header.jpeg) center/cover fixed;
+  background: url(../assets/header.webp) center/cover fixed;
   height: 100vh;
 }
 .encabezado_bg {
@@ -170,6 +170,7 @@ a {
 .alojamiento_contenido_img img {
   border-radius: 2rem;
   max-width: 100%;
+  box-shadow: 2px 4px 5px #000;
 }
 .alojamiento_contenido_descripcion {
   align-content: center;
@@ -203,6 +204,7 @@ a {
 }
 .alojamiento_contenido_descripcion_boton_btn:hover {
   border: 2px solid #000;
+  padding: 0 2rem;
 }
 .alojamiento_contenido_descripcion_boton_btn a {
   font-size: 2rem;
@@ -211,6 +213,10 @@ a {
   text-align: center;
   color: #000;
   cursor: pointer;
+  transition: font-size 1s;
+}
+.alojamiento_contenido_descripcion_boton_btn a:hover {
+  font-size: 2.5rem;
 }
 
 /* Galeria */
