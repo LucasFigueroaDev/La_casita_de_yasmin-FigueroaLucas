@@ -2,12 +2,21 @@
 @media(max-width:768px) {
     .encabezado_bg_titulo_principal {
         font-size: 5rem;
+        animation-name: escala-tablet-titulo;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 6s;
+        animation-delay: 1s;
     }
     .encabezado_bg_titulo_txt {
         font-size: 1.5rem;
+        animation-name: escala-tablet-sub;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 6s;
+        animation-delay: 1s;
     }
 }
-
 @media(max-width: 480px) {
     .encabezado{
         background-attachment: scroll;
@@ -24,5 +33,21 @@
     }
     .alojamiento_contenido_descripcion_txt p {
         font-size: 1.5rem;
+    }
+}
+@media (min-width: 800px){
+    .encabezado_bg_titulo_principal{
+        animation-name: escala-desktop-titulo;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 6s;
+        animation-delay: 1s;
+    }
+    .encabezado_bg_titulo_txt {
+        animation-name: escala-desktop-sub;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 6s;
+        animation-delay: 1s;
     }
 }

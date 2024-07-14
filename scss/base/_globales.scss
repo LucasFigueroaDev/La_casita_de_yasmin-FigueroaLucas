@@ -1,6 +1,7 @@
 /* Globales */
 h1 {
     @include style-text (7rem, 400, italic, center);
+    font-family: $font-titulo;
     color: $color-blanco;
 }
 

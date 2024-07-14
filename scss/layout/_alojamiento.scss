@@ -28,23 +28,23 @@
                 }
             }
             &_boton {
-                width: 30rem;
-                text-align: center;
                 margin-top: 1.5rem;
-                border: 1px solid $color-negro;
-                border-radius: 3rem;
-                cursor: pointer;
                 animation: mover-izq-der 2s 1;
-                &:hover {
-                    background: $color-verde;
-                }
                 &_btn {
-                    background: transparent;
-                    border: none;
+                    text-align: center;
+                    background: $color-verde;
+                    border: 1px solid $color-negro;
+                    border-radius: 3rem;
+                    padding: 0 1rem;
+                    transition: border;
+                    &:hover {
+                        border: 2px solid $color-negro;
+                        
+                    }
                     a {
                         @include style-text (2rem, 700, normal, center);
-                        text-decoration: none;
                         color: $color-negro;
+                        cursor: pointer;
                     }
                 }
             }

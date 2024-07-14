@@ -1,3 +1,55 @@
+@keyframes escala-desktop-titulo {
+  25% {
+    font-size: 9rem;
+  }
+  50% {
+    font-size: 5rem;
+  }
+  100% {
+    font-size: 7rem;
+  }
+}
+@keyframes escala-desktop-sub {
+  25% {
+    font-size: 5rem;
+  }
+  50% {
+    font-size: 7rem;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
+@keyframes escala-tablet-titulo {
+  25% {
+    font-size: 7rem;
+  }
+  50% {
+    font-size: 3rem;
+  }
+  100% {
+    font-size: 5rem;
+  }
+}
+@keyframes escala-tablet-sub {
+  25% {
+    font-size: 2rem;
+  }
+  50% {
+    font-size: 3rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
+@keyframes mover-izq-der {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(16x);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +69,7 @@ h1 {
   font-weight: 400;
   font-style: italic;
   text-align: center;
+  font-family: "Baskervville SC", serif;
   color: #fff;
 }
 
@@ -95,21 +148,10 @@ a {
   position: relative;
   top: 30%;
 }
-.encabezado_bg_titulo_principal {
-  animation: mover-izq-der 3s 1;
-}
 .encabezado_bg_titulo_txt {
-  animation: mover-izq-der 2s 1;
   font-size: 3rem;
   color: #fff;
-}
-@keyframes mover-izq-der {
-  from {
-    transform: translateX(-300px);
-  }
-  to {
-    transform: translateX(16x);
-  }
+  font-style: italic;
 }
 
 /* Alojamiento */
@@ -148,28 +190,27 @@ a {
   animation: mover-izq-der 3s 1;
 }
 .alojamiento_contenido_descripcion_boton {
-  width: 30rem;
-  text-align: center;
   margin-top: 1.5rem;
-  border: 1px solid #000;
-  border-radius: 3rem;
-  cursor: pointer;
   animation: mover-izq-der 2s 1;
 }
-.alojamiento_contenido_descripcion_boton:hover {
-  background: #49bd9c;
-}
 .alojamiento_contenido_descripcion_boton_btn {
-  background: transparent;
-  border: none;
+  text-align: center;
+  background: #49bd9c;
+  border: 1px solid #000;
+  border-radius: 3rem;
+  padding: 0 1rem;
+  transition: border;
+}
+.alojamiento_contenido_descripcion_boton_btn:hover {
+  border: 2px solid #000;
 }
 .alojamiento_contenido_descripcion_boton_btn a {
   font-size: 2rem;
   font-weight: 700;
   font-style: normal;
   text-align: center;
-  text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 
 /* Galeria */
@@ -390,9 +431,19 @@ a {
 @media (max-width: 768px) {
   .encabezado_bg_titulo_principal {
     font-size: 5rem;
+    animation-name: escala-tablet-titulo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 1s;
   }
   .encabezado_bg_titulo_txt {
     font-size: 1.5rem;
+    animation-name: escala-tablet-sub;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 1s;
   }
 }
 @media (max-width: 480px) {
@@ -410,6 +461,22 @@ a {
   }
   .alojamiento_contenido_descripcion_txt p {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .encabezado_bg_titulo_principal {
+    animation-name: escala-desktop-titulo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  .encabezado_bg_titulo_txt {
+    animation-name: escala-desktop-sub;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 1s;
   }
 }
 

@@ -1,0 +1,29 @@
+@keyframes escala-desktop-titulo {
+    25% {font-size: 9rem;}
+    50% {font-size: 5rem;}
+    100%{font-size: 7rem;}
+}
+
+@keyframes escala-desktop-sub {
+    25% {font-size: 5rem;}
+    50% {font-size: 7rem;}
+    100%{font-size: 3rem;}
+}
+@keyframes escala-tablet-titulo {
+    25% {font-size: 7rem;}
+    50% {font-size: 3rem;}
+    100%{font-size: 5rem;}
+}
+@keyframes escala-tablet-sub {
+    25% {font-size: 2rem;}
+    50% {font-size: 3rem;}
+    100%{font-size: 1.5rem;}
+}
+@keyframes mover-izq-der {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(16x);
+    }
+}
