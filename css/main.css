@@ -20,14 +20,6 @@
     font-size: 3rem;
   }
 }
-@keyframes mover-izq-der {
-  from {
-    transform: translateX(-300px);
-  }
-  to {
-    transform: translateX(16x);
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -143,7 +135,6 @@ a {
 .alojamiento_contenido_img {
   max-width: 75rem;
   margin-bottom: 1rem;
-  animation: mover-izq-der 4s 1;
 }
 .alojamiento_contenido_img img {
   border-radius: 2rem;
@@ -166,11 +157,9 @@ a {
   text-align: center;
   color: #000;
   text-transform: uppercase;
-  animation: mover-izq-der 3s 1;
 }
 .alojamiento_contenido_descripcion_boton {
   margin-top: 1.5rem;
-  animation: mover-izq-der 2s 1;
 }
 .alojamiento_contenido_descripcion_boton_btn {
   text-align: center;
