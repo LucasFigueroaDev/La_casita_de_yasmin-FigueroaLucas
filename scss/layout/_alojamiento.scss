@@ -29,6 +29,7 @@
             &_boton {
                 margin-top: 1.5rem;
                 &_btn {
+                    max-width: 50rem;
                     text-align: center;
                     background: $color-verde;
                     border: 1px solid $color-negro;
@@ -37,15 +38,15 @@
                     transition: border;
                     &:hover {
                         border: 2px solid $color-negro;
-                        padding: 0 2rem;
                     }
                     a {
-                        @include style-text (2rem, 700, normal, center);
+                        @include style-text (2.5rem, 700, normal, center);
                         color: $color-negro;
                         cursor: pointer;
-                        transition: font-size 1s;
                         &:hover {
-                            font-size: 2.5rem;
+                            text-decoration: underline;
+                            color: $color-blanco;
+                            text-shadow: 0 0 1rem $color-negro;
                         }
                     }
                 }
