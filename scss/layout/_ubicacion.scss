@@ -4,19 +4,24 @@
     &_contenido {
         border: 2px solid $color-negro;
         border-radius: 2rem;
-        padding: 2rem;
         background: linear-gradient(135deg, rgba(147,206,222,1) 0%, rgba(117,189,209,0.94) 27%, rgba(73,189,156,0.83) 81%, rgba(73,189,156,0.79) 100%);        
+        max-width: 150rem;
+        margin: 0 auto;
+        padding: 5rem;
+        gap: 2rem;
         &_map {
-            max-width: 80rem;
+            max-width: 70rem;
             border: 1px solid $color-negro;
         }
-        &_txt {
-            @include style-text (2rem, 450, italic, start);
-            margin-top: 1rem;
-            color: $color-negro;
-            span {
-                display: block;
-                @include style-text (3rem, 550, normal, start);
+        &_descripcion{
+            max-width: 100%;
+            &_txt {
+                @include style-text (2rem, 450, italic, start);
+                color: $color-negro;
+                span {
+                    display: block;
+                    @include style-text (3rem, 550, normal, start);
+                }
             }
         }
     }
