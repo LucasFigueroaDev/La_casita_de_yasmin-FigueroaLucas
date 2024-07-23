@@ -27,7 +27,7 @@
                 }
             }
             &_boton {
-                margin-top: 2rem;
+                margin-top: 3rem;
                 &_btn {
                     max-width: 50rem;
                     text-align: center;
@@ -35,10 +35,6 @@
                     border: 1px solid $color-negro;
                     border-radius: 3rem;
                     padding: 0 1rem;
-                    transition: border;
-                    &:hover {
-                        border: 2px solid $color-negro;
-                    }
                     a {
                         @include style-text (2.5rem, 700, normal, center);
                         color: $color-negro;
