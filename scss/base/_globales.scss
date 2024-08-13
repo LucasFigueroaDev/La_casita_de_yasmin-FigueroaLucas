@@ -30,5 +30,10 @@ a{
 }
 
 .main_contenedor {
-    background: $bg-main bottom / cover fixed;
+    background-image: $bg-main;
+    background-position: bottom;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
 }

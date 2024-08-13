@@ -136,24 +136,24 @@
         <section id="contacto" class="contacto">
             <h2>Contacto</h2>
             <hr>
-            <form action="" class="contacto_formulario">
-                <fieldset class="contacto_formulario_set">
+            <form action="POST" class="contacto_formulario">
+                <fieldset class="contacto_formulario_set" >
                     <div class="row">
                         <div class="col-lg-6 col-md-6 contacto_formulario_set_campo">
-                            <label for="">Nombre</label>
-                            <input type="text" class="contacto_formulario_set_campo_input" placeholder="Tu Nombre">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" class="contacto_formulario_set_campo_input" placeholder="Tu Nombre" autocomplete="given-name">
                         </div>
                         <div class="col-lg-6 col-md-6 contacto_formulario_set_campo">
-                            <label for="">Teléfono</label>
-                            <input type="tel" class="contacto_formulario_set_campo_input" placeholder="Tu Teléfono">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" class="contacto_formulario_set_campo_input" placeholder="Tu Teléfono" autocomplete="family-name">
                         </div>
                         <div class="col-lg-12 contacto_formulario_set_campo">
-                            <label for="">Correo</label>
-                            <input type="email" class="contacto_formulario_set_campo_input" placeholder="Tu Email">
+                            <label for="mail">Correo</label>
+                            <input type="email" id="mail" class="contacto_formulario_set_campo_input" placeholder="Tu Email" autocomplete="off">
                         </div>
                         <div class="col-lg-12 contacto_formulario_set_campo">
-                            <label for="">Mensaje</label>
-                            <textarea class="contacto_formulario_set_campo_input" placeholder="Mensaje"></textarea>
+                            <label for="msj">Mensaje</label>
+                            <textarea class="contacto_formulario_set_campo_input" placeholder="Mensaje" id="msj"></textarea>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
